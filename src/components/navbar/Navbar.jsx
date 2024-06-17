@@ -34,7 +34,11 @@ const Navbar = () => {
           </Group>
           <Group visibleFrom="sm">
             <Button variant="default">Log in</Button>
-            <Button color="#FAB005" style={{ color: "black" }}>
+            <Button
+              variant="gradient"
+              gradient={{ from: "#ffb75e", to: "#ed8f03" }}
+              style={{ color: "black" }}
+            >
               Cadastrar
             </Button>
           </Group>
