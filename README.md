@@ -1,1 +1,1 @@
-# Controle de Estoqu
+# Controle de Estoque
