@@ -26,7 +26,7 @@ const mockdata = [
   {
     title: "Sem elemntos de terceiros",
     description:
-      "Confie em uma solução totalmente independente, desenvolvida internamente, que oferece máxima segurança e controle sem a interferências",
+      "Confie em uma solução totalmente independente, desenvolvida internamente, que oferece máxima segurança e controle sem interferências",
     icon: <LuCookie size={50} color="#ed8f03" />,
   },
 ];
