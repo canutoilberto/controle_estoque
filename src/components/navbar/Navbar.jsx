@@ -22,12 +22,15 @@ const Navbar = () => {
           <a href="#" className={classes.logo}>
             <h3>LOGO</h3>
           </a>
-          <Group h="100%" gap={0} visibleFrom="sm">
+          <Group h="100%" gap={0} ml={100} visibleFrom="sm">
             <a href="#" className={classes.links}>
               Início
             </a>
             <a href="#" className={classes.links}>
               Sobre nós
+            </a>
+            <a href="#" className={classes.links}>
+              Planos
             </a>
             <a href="#" className={classes.links}>
               Contato

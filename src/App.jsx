@@ -7,6 +7,7 @@ import CardSectionComponent from "./components/cardSection/CardSectionComponent"
 import BannerSection from "./components/bannerSection/BannerSection";
 import FaqSection from "./components/faqSection/FaqSection";
 import FooterSection from "./components/footerSection/FooterSection";
+import AffixComponent from "./components/affixComponent/AffixComponent";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <BannerSection />
       <FaqSection />
       <FooterSection />
+      <AffixComponent />
     </MantineProvider>
   );
 }
