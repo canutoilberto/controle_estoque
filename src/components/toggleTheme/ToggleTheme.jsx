@@ -18,12 +18,14 @@ const ToggleTheme = () => {
       onClick={() =>
         setColorScheme(computedColorScheme === "light" ? "dark" : "light")
       }
-      variant="default"
+      variant="gradient"
+      gradient={{ from: "#ffb75e", to: "#ed8f03" }}
+      style={{ color: "black" }}
       size="lg"
       aria-label="Toggle color scheme"
     >
-      <LuSun className={cx(classes.icon, classes.light)} stroke={1.5} />
-      <LuMoon className={cx(classes.icon, classes.dark)} stroke={1.5} />
+      <LuSun className={cx(classes.icon, classes.light)} />
+      <LuMoon className={cx(classes.icon, classes.dark)} />
     </ActionIcon>
   );
 };

@@ -61,6 +61,9 @@ const Navbar = () => {
         zIndex={1000000}
       >
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
+          <div className={classes.btn}>
+            <ToggleTheme />
+          </div>
           <Divider my="sm" />
           <a href="#" className={classes.links}>
             Início
@@ -73,14 +76,16 @@ const Navbar = () => {
           </a>
           <Divider my="sm" />
           <Group>
-            <Button variant="default">Log in</Button>
-            <Button
-              variant="gradient"
-              gradient={{ from: "#ffb75e", to: "#ed8f03" }}
-              style={{ color: "black" }}
-            >
-              Cadastrar
-            </Button>
+            <div className={classes.btn}>
+              <Button variant="default">Log in</Button>
+              <Button
+                variant="gradient"
+                gradient={{ from: "#ffb75e", to: "#ed8f03" }}
+                style={{ color: "black" }}
+              >
+                Cadastrar
+              </Button>
+            </div>
           </Group>
         </ScrollArea>
       </Drawer>

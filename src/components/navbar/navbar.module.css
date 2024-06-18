@@ -12,6 +12,12 @@
   color: inherit;
 }
 
+.btn {
+  display: flex;
+  gap: 0.5rem;
+  padding-left: 1rem;
+}
+
 .links {
   display: flex;
   align-items: center;
