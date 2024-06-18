@@ -15,7 +15,7 @@ const HeroSection = () => {
                 variant="gradient"
                 gradient={{ from: "#ffb75e", to: "#ed8f03" }}
               >
-                Melhor solução
+                Melhor Solução
               </Text>{" "}
               em organização de estoque
             </Title>

@@ -10,6 +10,7 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./navbar.module.css";
+import ToggleTheme from "../toggleTheme/ToggleTheme";
 
 const Navbar = () => {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
@@ -41,6 +42,7 @@ const Navbar = () => {
             >
               Cadastrar
             </Button>
+            <ToggleTheme />
           </Group>
           <Burger
             opened={drawerOpened}
@@ -72,7 +74,13 @@ const Navbar = () => {
           <Divider my="sm" />
           <Group>
             <Button variant="default">Log in</Button>
-            <Button>Cadastrar</Button>
+            <Button
+              variant="gradient"
+              gradient={{ from: "#ffb75e", to: "#ed8f03" }}
+              style={{ color: "black" }}
+            >
+              Cadastrar
+            </Button>
           </Group>
         </ScrollArea>
       </Drawer>

@@ -1,9 +1,10 @@
 .header {
-  height: rem(60px);
+  height: rem(64px);
   padding-left: var(--mantine-spacing-xl);
   padding-right: var(--mantine-spacing-xl);
   border-bottom: rem(1px) solid
     light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  position: sticky;
 }
 
 .logo {
