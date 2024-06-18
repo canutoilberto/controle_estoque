@@ -24,7 +24,7 @@ const mockdata = [
     icon: <LuUser size={50} color="#ed8f03" />,
   },
   {
-    title: "Sem elemntos de terceiros",
+    title: "Sem elementos de terceiros",
     description:
       "Confie em uma solução totalmente independente, desenvolvida internamente, que oferece máxima segurança e controle sem interferências",
     icon: <LuCookie size={50} color="#ed8f03" />,
