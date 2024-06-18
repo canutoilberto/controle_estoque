@@ -20,7 +20,7 @@ const Navbar = () => {
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
           <a href="#" className={classes.logo}>
-            <p>LOGO</p>
+            <h3>LOGO</h3>
           </a>
           <Group h="100%" gap={0} visibleFrom="sm">
             <a href="#" className={classes.links}>
