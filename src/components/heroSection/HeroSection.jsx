@@ -7,7 +7,7 @@ const HeroSection = () => {
       <Container size="lg">
         <div className={classes.inner}>
           <div className={classes.content}>
-            <Title>
+            <Title className={classes.title}>
               Sua{" "}
               <Text
                 component="span"

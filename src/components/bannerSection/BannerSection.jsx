@@ -10,8 +10,9 @@ const BannerSection = () => {
           Se inscreva na nossa Newsletter
         </Text>
         <Text fz="sm" c="dimmed">
-          You will never miss important product updates, latest news and
-          community QA sessions. Our newsletter is once a week, every Sunday.
+          Você nunca perderá atualizações importantes de produtos, as últimas
+          notícias e sessões de perguntas e respostas da comunidade. Nossa
+          newsletter é semanal, enviada todo domingo.
         </Text>
 
         <div className={classes.controls}>

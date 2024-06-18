@@ -20,8 +20,8 @@ const ToggleTheme = () => {
       }
       variant="gradient"
       gradient={{ from: "#ffb75e", to: "#ed8f03" }}
-      style={{ color: "black" }}
       size="lg"
+      style={{ color: "black" }}
       aria-label="Toggle color scheme"
     >
       <LuSun className={cx(classes.icon, classes.light)} />
