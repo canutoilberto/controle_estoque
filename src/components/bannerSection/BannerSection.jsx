@@ -3,7 +3,7 @@ import classes from "./bannerSection.module.css";
 
 const BannerSection = () => {
   return (
-    <div className={classes.wrapper}>
+    <div name="newsletter" className={classes.wrapper}>
       <div className={classes.body}>
         <Title className={classes.title}>Wait a minute...</Title>
         <Text fw={500} fz="lg" mb={5}>

@@ -96,12 +96,22 @@ const Navbar = () => {
           <a href="/" className={classes.links}>
             Início
           </a>
-          <a href="#" className={classes.links}>
+          <Link
+            to="about"
+            smooth={true}
+            duration={800}
+            className={classes.links}
+          >
             Sobre nós
-          </a>
-          <a href="#" className={classes.links}>
+          </Link>
+          <Link
+            to="plans"
+            smooth={true}
+            duration={800}
+            className={classes.links}
+          >
             Planos
-          </a>
+          </Link>
           <Divider my="sm" />
           <Group>
             <div className={classes.btn}>

@@ -10,6 +10,7 @@ import {
   rem,
 } from "@mantine/core";
 import { FaCheckCircle } from "react-icons/fa";
+import { Link } from "react-scroll";
 import classes from "./aboutUsSection.module.css";
 
 const AboutUsSection = () => {
@@ -56,17 +57,26 @@ const AboutUsSection = () => {
           </List>
 
           <Group mt={30}>
-            <Button radius="xl" size="md" className={classes.control}>
-              Nos Contate
-            </Button>
             <Button
-              variant="default"
               radius="xl"
+              variant="default"
               size="md"
               className={classes.control}
             >
-              Inscreva-se
+              Nos Contate
             </Button>
+            <Link to="newsletter" smooth={true} duration={800}>
+              <Button
+                variant="gradient"
+                gradient={{ from: "#ffb75e", to: "#ed8f03" }}
+                style={{ color: "black" }}
+                radius="xl"
+                size="md"
+                className={classes.control}
+              >
+                Inscreva-se
+              </Button>
+            </Link>
           </Group>
         </div>
         <Image src="./mailing.svg" className={classes.image} />
