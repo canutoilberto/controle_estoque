@@ -1,4 +1,5 @@
 import { Container, Title, Text, Button } from "@mantine/core";
+import { Link } from "react-scroll";
 import classes from "./heroSection.module.css";
 
 const HeroSection = () => {
@@ -24,16 +25,18 @@ const HeroSection = () => {
               estoque em tempo real, com informações precisas sobre entrada,
               saída e níveis de estoque mínimo.
             </Text>
-            <Button
-              variant="gradient"
-              gradient={{ from: "#ffb75e", to: "#ed8f03" }}
-              size="xl"
-              className={classes.control}
-              mt={40}
-              style={{ color: "black" }}
-            >
-              Nos Conheça!
-            </Button>
+            <Link to="plans" smooth={true} duration={800}>
+              <Button
+                variant="gradient"
+                gradient={{ from: "#ffb75e", to: "#ed8f03" }}
+                size="xl"
+                className={classes.control}
+                mt={40}
+                style={{ color: "black" }}
+              >
+                Nos Conheça!
+              </Button>
+            </Link>
           </div>
         </div>
       </Container>

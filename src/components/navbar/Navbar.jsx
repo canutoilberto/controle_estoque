@@ -10,6 +10,7 @@ import {
   Anchor,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import { Link } from "react-scroll";
 import classes from "./navbar.module.css";
 import ToggleTheme from "../toggleTheme/ToggleTheme";
 
@@ -27,12 +28,22 @@ const Navbar = () => {
             <a href="/" className={classes.links}>
               Início
             </a>
-            <a href="#" className={classes.links}>
+            <Link
+              to="about"
+              smooth={true}
+              duration={800}
+              className={classes.links}
+            >
               Sobre nós
-            </a>
-            <a href="#" className={classes.links}>
+            </Link>
+            <Link
+              to="plans"
+              smooth={true}
+              duration={800}
+              className={classes.links}
+            >
               Planos
-            </a>
+            </Link>
           </Group>
           <Group visibleFrom="sm">
             <Button variant="default">

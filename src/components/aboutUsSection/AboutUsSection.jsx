@@ -14,7 +14,7 @@ import classes from "./aboutUsSection.module.css";
 
 const AboutUsSection = () => {
   return (
-    <Container size="md">
+    <Container name="plans" size="md">
       <div className={classes.inner}>
         <div className={classes.content}>
           <Title className={classes.title}>

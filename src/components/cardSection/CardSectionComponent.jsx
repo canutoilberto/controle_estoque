@@ -50,7 +50,7 @@ const CardSectionComponent = () => {
     </Card>
   ));
   return (
-    <Container size="lg" py="xl" my="xl">
+    <Container name="about" size="lg" py="xl" my="xl">
       <Group justify="center">
         <Badge
           variant="gradient"
