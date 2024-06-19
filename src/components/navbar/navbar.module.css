@@ -17,6 +17,12 @@
   padding-left: 1rem;
 }
 
+.anchor {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
 .links {
   display: flex;
   align-items: center;

@@ -7,6 +7,7 @@ import {
   Group,
   Divider,
   ScrollArea,
+  Anchor,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./navbar.module.css";
@@ -19,11 +20,11 @@ const Navbar = () => {
     <Box>
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
-          <a href="#" className={classes.logo}>
+          <a href="/" className={classes.logo}>
             <h3>LOGO</h3>
           </a>
           <Group h="100%" gap={0} ml={100} visibleFrom="sm">
-            <a href="#" className={classes.links}>
+            <a href="/" className={classes.links}>
               Início
             </a>
             <a href="#" className={classes.links}>
@@ -32,18 +33,21 @@ const Navbar = () => {
             <a href="#" className={classes.links}>
               Planos
             </a>
-            <a href="#" className={classes.links}>
-              Contato
-            </a>
           </Group>
           <Group visibleFrom="sm">
-            <Button variant="default">Log in</Button>
+            <Button variant="default">
+              <Anchor component="a" href="/login" className={classes.anchor}>
+                Log in
+              </Anchor>
+            </Button>
             <Button
               variant="gradient"
               gradient={{ from: "#ffb75e", to: "#ed8f03" }}
               style={{ color: "black" }}
             >
-              Cadastrar
+              <Anchor component="a" href="/contact" className={classes.anchor}>
+                Contato
+              </Anchor>
             </Button>
             <ToggleTheme />
           </Group>
@@ -68,25 +72,35 @@ const Navbar = () => {
             <ToggleTheme />
           </div>
           <Divider my="sm" />
-          <a href="#" className={classes.links}>
+          <a href="/" className={classes.links}>
             Início
           </a>
           <a href="#" className={classes.links}>
             Sobre nós
           </a>
           <a href="#" className={classes.links}>
-            Contato
+            Planos
           </a>
           <Divider my="sm" />
           <Group>
             <div className={classes.btn}>
-              <Button variant="default">Log in</Button>
+              <Button variant="default">
+                <Anchor component="a" href="/login" className={classes.anchor}>
+                  Log in
+                </Anchor>
+              </Button>
               <Button
                 variant="gradient"
                 gradient={{ from: "#ffb75e", to: "#ed8f03" }}
                 style={{ color: "black" }}
               >
-                Cadastrar
+                <Anchor
+                  component="a"
+                  href="/contact"
+                  className={classes.anchor}
+                >
+                  Contato
+                </Anchor>
               </Button>
             </div>
           </Group>
