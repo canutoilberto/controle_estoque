@@ -2,9 +2,9 @@ import { Container, Group, Anchor } from "@mantine/core";
 import classes from "./footerSection.module.css";
 
 const links = [
-  { link: "#", label: "Início" },
+  { link: "/", label: "Início" },
   { link: "#", label: "Sobre nós" },
-  { link: "#", label: "Contato" },
+  { link: "#", label: "Planos" },
 ];
 
 const FooterSection = () => {
@@ -24,7 +24,7 @@ const FooterSection = () => {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        <h2>LOGO</h2>
+        <h2>ESTOQUE+</h2>
         <Group className={classes.links}>{items}</Group>
       </Container>
     </div>

@@ -21,7 +21,7 @@ const Navbar = () => {
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
           <a href="/" className={classes.logo}>
-            <h3>LOGO</h3>
+            <h3>ESTOQUE+</h3>
           </a>
           <Group h="100%" gap={0} ml={100} visibleFrom="sm">
             <a href="/" className={classes.links}>
@@ -36,7 +36,12 @@ const Navbar = () => {
           </Group>
           <Group visibleFrom="sm">
             <Button variant="default">
-              <Anchor component="a" href="/login" className={classes.anchor}>
+              <Anchor
+                component="a"
+                href="/login"
+                underline="never"
+                className={classes.anchor}
+              >
                 Log in
               </Anchor>
             </Button>
@@ -45,7 +50,12 @@ const Navbar = () => {
               gradient={{ from: "#ffb75e", to: "#ed8f03" }}
               style={{ color: "black" }}
             >
-              <Anchor component="a" href="/contact" className={classes.anchor}>
+              <Anchor
+                component="a"
+                href="/contact"
+                underline="never"
+                className={classes.anchor}
+              >
                 Contato
               </Anchor>
             </Button>

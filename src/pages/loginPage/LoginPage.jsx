@@ -14,7 +14,7 @@ import classes from "./loginPage.module.css";
 
 const LoginPage = () => {
   return (
-    <Container size={420} my={40}>
+    <Container size={600} my={40}>
       <Title ta="center" className={classes.title}>
         Bem-vindo ao seu Estoque!
       </Title>

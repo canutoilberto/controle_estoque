@@ -11,7 +11,7 @@ import classes from "./contactPage.module.css";
 
 const ContactPage = () => {
   return (
-    <Container size={420} my={40}>
+    <Container size={600} my={40}>
       <Title ta="center" className={classes.title}>
         Seu contato é muito importante
       </Title>
