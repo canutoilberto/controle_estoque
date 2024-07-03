@@ -12,7 +12,8 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import { Link } from "react-scroll";
 import classes from "./navbar.module.css";
-import ToggleTheme from "../toggleTheme/ToggleTheme";
+//import ToggleTheme from "../toggleTheme/ToggleTheme";
+import SwitchTheme from "../switchTheme/SwitchTheme";
 
 const Navbar = () => {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
@@ -46,6 +47,7 @@ const Navbar = () => {
             </Link>
           </Group>
           <Group visibleFrom="sm">
+            <SwitchTheme />
             <Button variant="default">
               <Anchor
                 component="a"
@@ -70,7 +72,6 @@ const Navbar = () => {
                 Contato
               </Anchor>
             </Button>
-            <ToggleTheme />
           </Group>
           <Burger
             opened={drawerOpened}
@@ -90,7 +91,7 @@ const Navbar = () => {
       >
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
           <div className={classes.btn}>
-            <ToggleTheme />
+            <SwitchTheme />
           </div>
           <Divider my="sm" />
           <a href="/" className={classes.links}>
