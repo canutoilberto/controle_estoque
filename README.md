@@ -1,1 +1,3 @@
-# Controle de Estoque
+# Live Demo
+
+https://controle-estoque-plum.vercel.app/
